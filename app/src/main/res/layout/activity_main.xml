@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aplicación NFC"
+        android:textSize="40dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/tvTitulo"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_below="@+id/tvTitulo"
+        android:src="@drawable/nfc"
+        android:id="@+id/img"/>
+
+    <Button
+        android:id="@+id/btnLeer"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="118dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="123dp"
+        android:background="@color/colorPrimary"
+        android:fontFamily="@font/roboto"
+        android:gravity="center"
+        android:text="Leer NFC"
+        android:textColor="@android:color/white"
+        android:textSize="21sp" />
+
+    <Button
+        android:id="@+id/btnEscribir"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnLeer"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="118dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="120dp"
+        android:background="@color/colorPrimary"
+        android:fontFamily="@font/roboto"
+        android:text="Escribir NFC"
+        android:textColor="@android:color/white"
+        android:textSize="21sp" />
+
+</RelativeLayout>
